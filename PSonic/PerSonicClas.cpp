@@ -38,7 +38,7 @@ void PerSonicClas::MoneySubs()
 
 void PerSonicClas::ChoqueDest()
 {
-	cout <<nombre<<" fue a "<<velocidad << "niveles de vlocidad parachocar con un enemigo" << endl;
+	cout <<nombre<<" fue a "<<velocidad << " niveles de velocidad para chocar con un enemigo" << endl;
 }
 
 void PerSonicClas::Autosanacion()

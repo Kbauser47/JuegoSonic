@@ -4,11 +4,15 @@ using namespace std;
 class score
 {
 private:
-	float tiempo;
+	float tiempo_limite, tiempo_recorrido;
 	int puntos_nivel,cantidad_vidas ;
 public:
-	score(float, int, int);
+	score();
+	void setscore(float ,int ,int);
 	void mostrar();
 	void cambiar();
+	float getscoreTiempoReco();
+	int getscorePuntNivel();
+	int getscoreCantVid();
 };
 

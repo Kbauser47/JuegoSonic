@@ -14,6 +14,7 @@ int main() {
 	psc1->setPerSonicClas(100, 100);
 	psc1->HacerseBolita();
 	psc1->Autosanacion();
+	cout<< "Los puntos de vida son: " << psc1->getPerSonicClasPV()<<endl;
 	psc1->ChoqueDest();
 
 	EsmeralCaos *esc2 = new EsmeralCaos("esmeralda", "rosa", 5);
@@ -37,9 +38,11 @@ int main() {
 	es5->cambiar();
 	es5->deslizable();
 
-	score *sc6 = new score(12.2, 1025, 5);
+	score *sc6 = new score();
 
+	sc6->setscore( 2, 23151, 3);
 	sc6->mostrar();
+	cout << "	Time : " << sc6->getscoreTiempoReco() << "			Puntaje : " << sc6->getscorePuntNivel() << "		Vidas : " << sc6->getscoreCantVid() << endl;
 
 	opciones *opc7 = new opciones("cuadrado", 12, 12);
 
