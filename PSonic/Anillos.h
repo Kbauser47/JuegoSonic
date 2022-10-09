@@ -5,12 +5,17 @@ class Anillos
 {
 private:
 	string color,forma;
-	float dimensiones, vel_giro;
+	float alto,ancho, vel_giro;
 	int cantidad;
 public:
-	Anillos(string, string, float, float,int);
+	Anillos();
+	void setAnillos(string, float, float, int);
 	void Unavida();
 	void desaparecer();
 	void absorvibles();
+	string setsetAnillosColor();
+	float setAnillosAlto();
+	float setAnillosAncho();
+	int setAnillosCantidad();
 };
 

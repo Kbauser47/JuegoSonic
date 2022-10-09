@@ -1,25 +1,51 @@
 #include "Anillos.h"
 
-Anillos::Anillos(string _color, string _forma, float _dimesiones, float _vel_giro, int _cantidad)
+Anillos::Anillos()
 { 
+	forma = "Redonda";
+	vel_giro = 12;
+}
+
+void Anillos::setAnillos(string _color,float _alto, float _ancho, int _cantidad)
+{
 	color = _color;
-	forma = _forma;
-	dimensiones = _dimesiones;
-	vel_giro = _vel_giro;
+	alto = _alto;
+	ancho = _ancho;
 	cantidad = _cantidad;
+
 }
 
 void Anillos::Unavida()
 {
-	cout <<cantidad<<" anillos protejen una vida" << endl;
+	cout <<"Los anillos protejen una vida" << endl;
 }
 
 void Anillos::desaparecer()
 {
-	cout <<cantidad<<" anillos desaparecieron despues de un choque" << endl;
+	cout <<"Los anillos desaparecieron despues de un choque" << endl;
 }
 
 void Anillos::absorvibles()
 {
-	cout <<cantidad<<" anillos fueron absorvidos" << endl; 
+	cout <<"Los anillos fueron absorvidos" << endl; 
+}
+
+string Anillos::setsetAnillosColor()
+{
+	return color;
+}
+
+float Anillos::setAnillosAlto()
+{
+	return alto;
+}
+
+float Anillos::setAnillosAncho()
+{
+	return ancho;
+}
+
+int Anillos::setAnillosCantidad()
+{
+	return cantidad;
 }

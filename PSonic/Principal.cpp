@@ -14,19 +14,26 @@ int main() {
 	psc1->setPerSonicClas(100, 100);
 	psc1->HacerseBolita();
 	psc1->Autosanacion();
-	cout<< "Los puntos de vida son: " << psc1->getPerSonicClasPV()<<endl;
 	psc1->ChoqueDest();
 
-	EsmeralCaos *esc2 = new EsmeralCaos("esmeralda", "rosa", 5);
+	cout << "Los puntos de vida son: " << psc1->getPerSonicClasPV() << endl;
+
+	EsmeralCaos *esc2 = new EsmeralCaos();
+	esc2->setEsEsmeralCaos("esmeralda", "rosa");
 
 	esc2->poder_ilim();
 	esc2->eabsorvibles();
 
-	Anillos *an3 = new Anillos("amarillo", "redonda", 10, 5, 10);
+	cout << "Nombre: " << esc2->getEsEsmeralCaosNombre() << "	Color: " << esc2->getEsEsmeralCaosColor() << endl;
+
+	Anillos *an3 = new Anillos();
+	an3->setAnillos("Amarillos", 6, 4, 80);
 
 	an3->Unavida();
 	an3->desaparecer();
 	an3->absorvibles();
+
+	cout << "Hay " << an3->getAnillosCantidad() << " anillos de color " << an3->getsetAnillosColor() << endl;
 
 	Enemigos *enm4 = new Enemigos("ovalada", "verde", "Badniks", 5, 10);
 

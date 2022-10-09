@@ -8,9 +8,12 @@ private:
 	int cantidad;
 
 public:
-	EsmeralCaos(string, string, int);
+	EsmeralCaos();
+	void setEsEsmeralCaos(string, string);
 	void poder_ilim();
 	void eabsorvibles();
+	string getEsEsmeralCaosNombre();
+	string getEsEsmeralCaosColor();
 
 };
 

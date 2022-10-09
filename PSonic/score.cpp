@@ -14,7 +14,6 @@ void score::setscore(float _tiempo_recorrido, int _puntos_nivel, int _cantidad_v
 
 void score::mostrar()
 {
-	cout << "PUNTOS DEL JUEGO" << endl;
 	cout << "Se mostró los datos requeridos" << endl;
 }
 

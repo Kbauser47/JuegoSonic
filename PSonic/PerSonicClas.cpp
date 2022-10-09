@@ -27,7 +27,6 @@ float PerSonicClas::getPersonicClasCM()
 
 void PerSonicClas::HacerseBolita()
 {
-	cout << "Personaje Principal" << endl;
 	cout <<nombre<<" se volvio bolita" << endl;
 }
 
