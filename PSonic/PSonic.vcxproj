@@ -129,15 +129,21 @@
   <ItemGroup>
     <ClCompile Include="Anillos.cpp" />
     <ClCompile Include="Enemigos.cpp" />
+    <ClCompile Include="escenario.cpp" />
     <ClCompile Include="EsmeralCaos.cpp" />
+    <ClCompile Include="opciones.cpp" />
     <ClCompile Include="PerSonicClas.cpp" />
     <ClCompile Include="Principal.cpp" />
+    <ClCompile Include="score.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Anillos.h" />
     <ClInclude Include="Enemigos.h" />
+    <ClInclude Include="escenario.h" />
     <ClInclude Include="EsmeralCaos.h" />
+    <ClInclude Include="opciones.h" />
     <ClInclude Include="PerSonicClas.h" />
+    <ClInclude Include="score.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

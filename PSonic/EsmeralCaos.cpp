@@ -1,11 +1,18 @@
 #include "EsmeralCaos.h"
 
+EsmeralCaos::EsmeralCaos(string _nombre, string _color, int _cantidad)
+{
+	nombre = _nombre;
+	color = _color;
+	cantidad = _cantidad;
+}
+
 void EsmeralCaos::poder_ilim()
 {
-	cout << "Otorga poder ilimitado" << endl;
+	cout <<"Adquiriste "<<nombre<< " y Otorga poder ilimitado" << endl;
 }
 
 void EsmeralCaos::eabsorvibles()
 {
-	cout << "Fu absorvido" << endl;
+	cout <<cantidad<<" "<< nombre << "s fue absorvido" << endl;
 }
