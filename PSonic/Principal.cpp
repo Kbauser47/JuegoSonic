@@ -10,8 +10,8 @@
 using namespace std;
 int main() {
 
-	PerSonicClas *psc1 = new PerSonicClas("Sonic", "Azul", 15.2, 100, 60, 100, 25);
-
+	PerSonicClas* psc1 = new PerSonicClas();
+	psc1->setPerSonicClas(100, 100);
 	psc1->HacerseBolita();
 	psc1->Autosanacion();
 	psc1->ChoqueDest();

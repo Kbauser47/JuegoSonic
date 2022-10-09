@@ -9,11 +9,14 @@ private:
 	float altura,puntos_vida,velocidad,capacidad_mon,peso;
 
 public:
-	PerSonicClas(string, string, float, float, float, float ,float);
+	PerSonicClas();
+	void setPerSonicClas(float,float);
 	void HacerseBolita();
 	void MoneySubs();
 	void ChoqueDest();
 	void Autosanacion();
+	float getPerSonicClasPV();
+	float getPersonicClasCM();
 
 
 };
