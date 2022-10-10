@@ -30,22 +30,23 @@ void Anillos::absorvibles()
 	cout <<"Los anillos fueron absorvidos" << endl; 
 }
 
-string Anillos::setsetAnillosColor()
+
+string Anillos::getsetAnillosColor()
 {
 	return color;
 }
 
-float Anillos::setAnillosAlto()
+float Anillos::getAnillosAlto()
 {
 	return alto;
 }
 
-float Anillos::setAnillosAncho()
+float Anillos::getAnillosAncho()
 {
 	return ancho;
 }
 
-int Anillos::setAnillosCantidad()
+int Anillos::getAnillosCantidad()
 {
 	return cantidad;
 }

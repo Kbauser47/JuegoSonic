@@ -7,8 +7,11 @@ private:
 	string nombre;
 	float altura, ancho, limite_sup, limite_inf;
 public:
-	escenario(string, float, float, float, float);
+	escenario();
+	void setescenario(float,float);
 	void cambiar();
 	void deslizable();
+	float getescenarioAltura();
+	float getescenarioAncho();
 };
 

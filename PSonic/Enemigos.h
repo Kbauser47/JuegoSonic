@@ -7,9 +7,12 @@ private:
 	string figura,color,nombre;
 	int cantidad,tamaño;
 public:
-	Enemigos(string, string, string, int, int);
+	Enemigos();
+	void setEnemigos(int, int);
 	void QuitarVida();
 	void volar();
 	void desaparecer();
+	int getEnemigosCantidad();
+	int getEnemigosTamaño();
 };
 

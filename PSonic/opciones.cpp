@@ -1,9 +1,13 @@
 #include "opciones.h"
 
-opciones::opciones(string _figura,float _altura,float _ancho)
+opciones::opciones()
 {
-	figura = _figura;
-	altura = _altura;
+	figura = "Cuadrada";
+}
+
+void opciones::setopciones(float _alto, float _ancho)
+{
+	altura = _alto;
 	ancho = _ancho;
 }
 
@@ -20,4 +24,14 @@ void opciones::salir()
 void opciones::configuraciones()
 {
 	cout << "Se pueden realizar configuraciones al juego" << endl;
+}
+
+float opciones::getopcionesAlto()
+{
+	return altura;
+}
+
+float opciones::getopcionesAncho()
+{
+	return ancho;
 }

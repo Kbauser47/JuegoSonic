@@ -13,9 +13,9 @@ public:
 	void Unavida();
 	void desaparecer();
 	void absorvibles();
-	string setsetAnillosColor();
-	float setAnillosAlto();
-	float setAnillosAncho();
-	int setAnillosCantidad();
+	string getsetAnillosColor();
+	float getAnillosAlto();
+	float getAnillosAncho();
+	int getAnillosCantidad();
 };
 

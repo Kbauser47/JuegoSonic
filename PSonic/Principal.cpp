@@ -10,24 +10,34 @@
 using namespace std;
 int main() {
 
+	//PERONAJE SONIC
 	PerSonicClas* psc1 = new PerSonicClas();
 	psc1->setPerSonicClas(100, 100);
+
+	cout << "\nPersonaje principal_______________________" << endl;
+
 	psc1->HacerseBolita();
 	psc1->Autosanacion();
 	psc1->ChoqueDest();
 
 	cout << "Los puntos de vida son: " << psc1->getPerSonicClasPV() << endl;
 
-	EsmeralCaos *esc2 = new EsmeralCaos();
+	//ESMERALDAS DEL CAOS
+	EsmeralCaos* esc2 = new EsmeralCaos();
 	esc2->setEsEsmeralCaos("esmeralda", "rosa");
+
+	cout << "\nEsmeraldas del juego_______________________" << endl;
 
 	esc2->poder_ilim();
 	esc2->eabsorvibles();
 
 	cout << "Nombre: " << esc2->getEsEsmeralCaosNombre() << "	Color: " << esc2->getEsEsmeralCaosColor() << endl;
 
-	Anillos *an3 = new Anillos();
+	//ANILLOS
+	Anillos* an3 = new Anillos();
 	an3->setAnillos("Amarillos", 6, 4, 80);
+
+	cout << "\nAnillos del juego__________________________" << endl;
 
 	an3->Unavida();
 	an3->desaparecer();
@@ -35,25 +45,48 @@ int main() {
 
 	cout << "Hay " << an3->getAnillosCantidad() << " anillos de color " << an3->getsetAnillosColor() << endl;
 
-	Enemigos *enm4 = new Enemigos("ovalada", "verde", "Badniks", 5, 10);
+	//ENEMIGOS
+	Enemigos* enm4 = new Enemigos();
+	enm4->setEnemigos(10, 5);
+
+	cout << "\nEnemigos del juego_________________________" << endl;
 
 	enm4->QuitarVida();
 	enm4->volar();
 
-	escenario* es5 = new escenario("Castillo", 10, 100, 7, 10);
+	cout << "Hay " << enm4->getEnemigosCantidad() << " enemigos que te lleva con " << enm4->getEnemigosTamaño() << " cabezas" << endl;
+
+	//ESCENARIO
+	escenario* es5 = new escenario();
+	es5->setescenario(20, 100);
+
+	cout << "\nEscenario del juego________________________" << endl;
 
 	es5->cambiar();
 	es5->deslizable();
 
-	score *sc6 = new score();
+	cout << "Este escenario tiene " << es5->getescenarioAncho() << " pies de ancho y " << es5->getescenarioAltura() << " de alto" << endl;
 
-	sc6->setscore( 2, 23151, 3);
-	sc6->mostrar();
-	cout << "	Time : " << sc6->getscoreTiempoReco() << "			Puntaje : " << sc6->getscorePuntNivel() << "		Vidas : " << sc6->getscoreCantVid() << endl;
+	//OPCIONES
+	opciones* opc7 = new opciones();
+	opc7->setopciones(4, 4);
 
-	opciones *opc7 = new opciones("cuadrado", 12, 12);
+	cout << "\nOpciones del juego_________________________" << endl;
 
 	opc7->configuraciones();
+	opc7->pausa();
+	opc7->configuraciones();
 
+	cout << "El tamaño de esta figura es de " << opc7->getopcionesAlto() << " x " << opc7->getopcionesAncho() << endl;
+
+	//SCORE
+	score* sc6 = new score();
+	sc6->setscore(2, 23151, 3);
+
+	cout << "\nScore del juego____________________________" << endl;
+
+	sc6->mostrar();
+	cout << "	Time : " << sc6->getscoreTiempoReco() << "			Puntaje : " << sc6->getscorePuntNivel() << "		Vidas : " << sc6->getscoreCantVid() << endl;
+	
 	return 0;
 }

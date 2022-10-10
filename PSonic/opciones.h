@@ -7,9 +7,12 @@ private:
 	string figura;
 	float altura,ancho;
 public:
-	opciones(string,float,float);
+	opciones();
+	void setopciones(float, float);
 	void pausa();
 	void salir();
 	void configuraciones();
+	float getopcionesAlto();
+	float getopcionesAncho();
 };
 

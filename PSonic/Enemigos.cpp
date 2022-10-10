@@ -1,25 +1,39 @@
 #include "Enemigos.h"
 
-Enemigos::Enemigos(string _figura, string _color, string _nombre, int _cantidad, int _tamaño)
+Enemigos::Enemigos()
 {
-	figura = _figura;
-	color = _color;
-	nombre = _nombre;
+	figura = "Ovalada";
+	color = "Verde";
+	nombre = "Badniks";
+}
+
+void Enemigos::setEnemigos(int _cantidad ,int _tamaño)
+{
 	cantidad = _cantidad;
 	tamaño = _tamaño;
 }
 
 void Enemigos::QuitarVida()
 {
-	cout << cantidad << " " << nombre << " te atacaron"<<endl;
+	cout << nombre << " te atacó"<<endl;
 }
 
 void Enemigos::volar()
 {
-	cout << cantidad << " " <<nombre<< " estan volando" << endl;
+	cout <<nombre<< " está volando" << endl;
 }
 
 void Enemigos::desaparecer()
 {
-	cout << cantidad << " " <<nombre<< " desaparecio" << endl;
+	cout <<nombre<< " desapareció" << endl;
+}
+
+int Enemigos::getEnemigosCantidad()
+{
+	return cantidad;
+}
+
+int Enemigos::getEnemigosTamaño()
+{
+	return tamaño;
 }
